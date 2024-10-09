@@ -31,7 +31,7 @@ func processFlags() flags {
 	countWord := flag.Bool("w", false, "Count words")
 	countLine := flag.Bool("l", false, "Count liness")
 
-	flag.Prase()
+	flag.Parse()
 	if !(*countByte || *countWord || *countLine || *countChar) {
 		*countByte = true
 		*countWord = true
